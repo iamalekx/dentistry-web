@@ -229,8 +229,8 @@ nav {
         gap: 30px;
         width: 70%;
 
-
-        .need-right-top, .need-right-down {
+        .need-right-top,
+        .need-right-down {
             display: flex;
             justify-content: space-between;
         }
@@ -256,6 +256,64 @@ nav {
             line-height: 2;
             word-spacing: 2px;
             letter-spacing: 0.5px;
+        }
+    }
+}
+
+.professional {
+    display: flex;
+    justify-content: space-between;
+
+    .professional-left {
+        position: relative;
+        display: inline-block;
+
+        img {
+            display: block;
+            width: 400px;
+            margin: -15% 0 0 25%;
+            position: relative;
+        }
+    }
+    .professional-left::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 0.5px solid #5ba3bb;
+        z-index: 0;
+        opacity: 0.4;
+
+        transform: translate(130px, 10px);
+    }
+
+    .professional-right {
+        margin: 5% 20% 5% 0;
+        width: 450px;
+
+        h1 {
+            font-family: arial;
+            font-weight: bolder;
+            font-size: 40px;
+            line-height: 1.5;
+        }
+        p {
+            font-size: 12.5px;
+            color: #a7adaf;
+            line-height: 2;
+            word-spacing: 2px;
+            letter-spacing: 0.5px;
+            margin: 8% 0 10%;
+        }
+        button {
+            font-size: 10px;
+            padding: 5px 15px;
+            background-color: #5ba3bb;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            transition: transform 0.3s ease;
+            transform: scale(1.2);
         }
     }
 }
