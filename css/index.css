@@ -64,8 +64,8 @@ nav .right-nav button:hover {
   color: #5ba3bb;
 }
 .treat .treat-left h1 {
-  font-family: "arial";
-  font-size: 90px;
+  font-family: "montserrat";
+  font-size: 70px;
   font-weight: 900;
 }
 .treat .treat-left h1:hover {
@@ -115,6 +115,10 @@ nav .right-nav button:hover {
 .treat .social1 a {
   color: #282828;
 }
+.treat .social1 a:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.5);
+}
 
 .children-dentistry {
   padding: 50px 350px 50px 40px;
@@ -128,16 +132,17 @@ nav .right-nav button:hover {
   transition: transform 0s ease;
   transform: scale(1.2);
   margin-left: 7%;
+  cursor: pointer;
 }
 .children-dentistry .info {
-  max-width: 400px;
-  margin: 1% 0;
+  max-width: 450px;
+  margin: 1% -5%;
 }
 .children-dentistry .info h1 {
-  font-family: arial;
+  font-family: montserrat;
   font-weight: bolder;
   font-size: 40px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 .children-dentistry .info p {
   color: #a7adaf;
@@ -181,13 +186,13 @@ nav .right-nav button:hover {
   justify-content: space-between;
 }
 .everything-need .need-left {
-  max-width: 300px;
+  max-width: 350px;
 }
 .everything-need .need-left h1 {
-  font-family: arial;
+  font-family: montserrat;
   font-weight: bolder;
   font-size: 40px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 .everything-need .need-right {
   display: flex;
@@ -235,6 +240,11 @@ nav .right-nav button:hover {
   margin: -15% 0 0 25%;
   position: relative;
 }
+.professional .professional-left img:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+}
 .professional .professional-left::before {
   content: "";
   position: absolute;
@@ -249,10 +259,10 @@ nav .right-nav button:hover {
   width: 450px;
 }
 .professional .professional-right h1 {
-  font-family: arial;
+  font-family: montserrat;
   font-weight: bolder;
   font-size: 40px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 .professional .professional-right p {
   font-size: 12.5px;
@@ -272,6 +282,131 @@ nav .right-nav button:hover {
 .professional .professional-right button:hover {
   transition: transform 0.3s ease;
   transform: scale(1.2);
+}
+
+.smile {
+  margin: 10% 5%;
+}
+.smile .h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: montserrat;
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 1.2;
+  align-items: center;
+  text-align: justify;
+  word-spacing: 5px;
+}
+.smile .h1 .happy {
+  color: #5ba3bb;
+  letter-spacing: 0cap;
+}
+.smile .smile-people {
+  display: flex;
+  justify-content: space-around;
+}
+.smile .smile-people .smile-left p {
+  transform: rotate(270deg);
+  margin-left: -110%;
+  font-weight: 300;
+  text-decoration: italic;
+}
+.smile .smile-people .smile-left img {
+  max-width: 400px;
+  margin-top: -2%;
+}
+.smile .smile-people .smile-right img {
+  position: relative;
+  max-width: 450px;
+  margin-top: -35%;
+  margin-left: -10%;
+  z-index: -1;
+}
+.smile .smile-people .smile-right p {
+  transform: rotate(270deg);
+  margin-right: -85%;
+  margin-top: -195%;
+  font-weight: 300;
+  text-decoration: italic;
+}
+.smile .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-left: 50%;
+  margin-top: -7%;
+  width: 550px;
+}
+.smile .text .sn {
+  display: flex;
+  color: #5ba3bb;
+}
+.smile .text .sn .snell {
+  font-family: "Libre Baskerville";
+  font-size: 26px;
+  text-align: justify;
+  font-weight: 100;
+  font-style: italic;
+  opacity: 0.7;
+}
+.smile .text p {
+  margin-left: 75%;
+  font-size: 14px;
+}
+
+.footer {
+  display: flex;
+  font-size: 12.5px;
+  padding: 5%;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+}
+.footer .phone,
+.footer .email {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-content-info {
+  margin-top: 30px;
+}
+.footer .footer-content-info p {
+  color: #a7adaf;
+}
+.footer .footer-content-info p:hover {
+  cursor: pointer;
+}
+.footer .footer-content-info form {
+  display: inline-flex;
+  font-size: 10px;
+}
+.footer .footer-content-info form input {
+  width: 300px;
+  max-width: 300px;
+  padding: 7px 10px;
+  background: transparent;
+  border: 0.5px solid white;
+}
+.footer .footer-content-info form button {
+  padding: 7px 25px;
+  border: 0.5px solid white;
+}
+.footer .footer-content-info .social2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+.footer .footer-content-info .social2 a {
+  color: white;
+}
+.footer .footer-content-info .social2 a:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.5);
+}
+.footer .footer-content-info .copyright {
+  display: flex;
+  justify-content: right;
 }
 
 /*# sourceMappingURL=index.css.map */

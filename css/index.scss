@@ -76,8 +76,8 @@ nav {
         }
 
         h1 {
-            font-family: "arial";
-            font-size: 90px;
+            font-family: "montserrat";
+            font-size: 70px;
             font-weight: 900;
         }
         h1:hover {
@@ -137,6 +137,11 @@ nav {
         a {
             color: #282828;
         }
+
+        a:hover {
+            transition: transform 0.5s ease;
+            transform: scale(1.5);
+        }
     }
 }
 
@@ -153,17 +158,18 @@ nav {
         transition: transform 0s ease;
         transform: scale(1.2);
         margin-left: 7%;
+        cursor: pointer;
     }
 
     .info {
-        max-width: 400px;
-        margin: 1% 0;
+        max-width: 450px;
+        margin: 1% -5%;
 
         h1 {
-            font-family: arial;
+            font-family: montserrat;
             font-weight: bolder;
             font-size: 40px;
-            line-height: 1.5;
+            line-height: 1.3;
         }
 
         p {
@@ -213,13 +219,13 @@ nav {
     justify-content: space-between;
 
     .need-left {
-        max-width: 300px;
+        max-width: 350px;
 
         h1 {
-            font-family: arial;
+            font-family: montserrat;
             font-weight: bolder;
             font-size: 40px;
-            line-height: 1.5;
+            line-height: 1.3;
         }
     }
 
@@ -274,6 +280,11 @@ nav {
             margin: -15% 0 0 25%;
             position: relative;
         }
+        img:hover {
+            transition: transform 0.3s ease;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
     }
     .professional-left::before {
         content: "";
@@ -291,10 +302,10 @@ nav {
         width: 450px;
 
         h1 {
-            font-family: arial;
+            font-family: montserrat;
             font-weight: bolder;
             font-size: 40px;
-            line-height: 1.5;
+            line-height: 1.3;
         }
         p {
             font-size: 12.5px;
@@ -314,6 +325,167 @@ nav {
         button:hover {
             transition: transform 0.3s ease;
             transform: scale(1.2);
+        }
+    }
+}
+
+.smile {
+    margin: 10% 5%;
+
+    .h1 {
+        display: flex;
+        flex-direction: column;
+        font-family: montserrat;
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 1.2;
+        align-items: center;
+        text-align: justify;
+        word-spacing: 5px;
+
+        .happy {
+            color: #5ba3bb;
+            letter-spacing: 0cap;
+        }
+    }
+
+    .smile-people {
+        display: flex;
+        justify-content: space-around;
+
+        .smile-left {
+            // display: flex;
+
+            p {
+                transform: rotate(270deg);
+                margin-left: -110%;
+                font-weight: 300;
+                text-decoration: italic;
+            }
+
+            img {
+                max-width: 400px;
+                margin-top: -2%;
+            }
+            // img:hover {
+            //     transition: transform 0.3s ease;
+            //     transform: scale(1.1);
+            //     cursor: pointer;
+            // }
+        }
+
+        .smile-right {
+            img {
+                position: relative;
+                max-width: 450px;
+                margin-top: -35%;
+                margin-left: -10%;
+                z-index: -1;
+            }
+            // img:hover {
+            //     transition: transform 0.3s ease;
+            //     transform: scale(1.1);
+            //     cursor: pointer;
+            // }
+
+            p {
+                transform: rotate(270deg);
+                margin-right: -85%;
+                margin-top: -195%;
+                font-weight: 300;
+                text-decoration: italic;
+            }
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-left: 50%;
+        margin-top: -7%;
+        width: 550px;
+
+        .sn {
+            display: flex;
+            color: #5ba3bb;
+
+            .snell {
+                font-family: "Libre Baskerville";
+                font-size: 26px;
+                text-align: justify;
+                font-weight: 100;
+                font-style: italic;
+                opacity: 0.7;
+            }
+        }
+        p {
+            margin-left: 75%;
+            font-size: 14px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    font-size: 12.5px;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+
+    .phone,
+    .email {
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer-content-info {
+        margin-top: 30px;
+
+        p {
+            color: #a7adaf;
+        }
+
+        p:hover {
+            cursor: pointer;
+        }
+
+        form {
+            display: inline-flex;
+            font-size: 10px;
+
+            input {
+                width: 300px;
+                max-width: 300px;
+                padding: 7px 10px;
+                background: transparent;
+                border: 0.5px solid white;
+            }
+            button {
+                padding: 7px 25px;
+                border: 0.5px solid white;
+            }
+        }
+
+        .social2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 0;
+
+            a {
+                color: white;
+            }
+
+            a:hover {
+                transition: transform 0.5s ease;
+                transform: scale(1.5);
+            }
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: right;
         }
     }
 }
