@@ -56,7 +56,7 @@ nav .right-nav button:hover {
 }
 
 .treat {
-  padding: 50px 25px 50px 40px;
+  padding: 50px 25px 50px 50px;
   display: flex;
   justify-content: space-between;
 }
