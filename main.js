@@ -1,24 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("toggle");
-    const sidebar = document.getElementById("sidebar");
+const toggle = document.querySelector("#toggle");
+const cancel = document.querySelector("#cancel");
 
-    // Hide sidebar by default on small screens
-    function hideSidebarOnSmallScreen() {
-        if (window.innerWidth <= 1200) {
-            sidebar.style.left = "-320px";
-        } else {
-            sidebar.style.left = "0";
-        }
-    }
-
-    hideSidebarOnSmallScreen();
-    window.addEventListener("resize", hideSidebarOnSmallScreen);
-
-    toggle.addEventListener("click", function () {
-        if (sidebar.style.left === "0px" || sidebar.style.left === "0") {
-            sidebar.style.left = "-320px";
-        } else {
-            sidebar.style.left = "0";
-        }
-    });
+toggle.addEventListener("click",  () => {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = "flex";
+    // console.log("hi");
 });
+
+cancel.addEventListener("click",  () => {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = "none";
+    // console.log("hi");
+});
+
+// function toggling() {
+//     const sidebar = document.querySelector(".sidebar");
+//     sidebar.style.display = "flex";
+//     console.log("hi");
+// }

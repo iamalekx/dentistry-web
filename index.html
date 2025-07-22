@@ -22,6 +22,10 @@
             referrerpolicy="no-referrer"
         />
         <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        />
+        <link
             href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
             rel="stylesheet"
         />
@@ -36,24 +40,46 @@
         <title>Dental Pro</title>
     </head>
     <body>
-        <span type="button" id="toggle" class="u-icon u-icon-32"
-            >o-align-justify</span
-        >
-        <nav id="sidebar">
+        <div class="side">
+            <i id="toggle" class="bi bi-list"></i>
+            <img class="logo" src="./assets/images/logo.png" alt="logo" />
+            <p>Denta<span>Pro</span></p>
+        </div>
+        <nav id="top-bar">
             <div class="left-nav">
-                <img src="./assets/images/logo.png" alt="logo" />
+                <img class="logo" src="./assets/images/logo.png" alt="logo" />
                 <p>Denta<span>Pro</span></p>
             </div>
-            <div class="mid-nav">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">PATIENT INFORMATION</a>
-                <a href="#">SERVICES</a>
-                <a href="#">BLOG</a>
-                <a href="#">CONTACT</a>
+            <div class="topbarList">
+                <div class="mid-nav">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">PATIENT INFORMATION</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="right-nav">
+                    <button>BOOK AN APPOINTMENT</button>
+                </div>
             </div>
-            <div class="right-nav">
-                <button>BOOK AN APPOINTMENT</button>
+        </nav>
+        <nav id="sidebar" class="sidebar">
+            <div class="left-nav">
+                <i id="cancel" class="bi bi-x"></i>
+            </div>
+            <div class="sidebarList">
+                <div class="mid-nav">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">PATIENT INFORMATION</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="right-nav">
+                    <button>BOOK AN APPOINTMENT</button>
+                </div>
             </div>
         </nav>
         <section class="treat">
@@ -317,14 +343,6 @@
             </div>
         </section>
 
-        <script>
-            src = "./main.js";
-        </script>
-        <script src="https://cdn.greyparrot.io/uihub-icons/uihub-icons.umd.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                initUIcons();
-            });
-        </script>
+        <script src="./main.js"></script>
     </body>
 </html>
