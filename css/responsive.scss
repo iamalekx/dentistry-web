@@ -1,0 +1,157 @@
+@media screen and (min-width: (1200px, 768px, 480px)) {
+    .bi-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+    .bi-list {
+        display: block;
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .treat {
+        .treat-left {
+            max-width: fit-content;
+            h1 {
+                font-size: 50px;
+            }
+
+            .learn-more {
+                margin-top: 20%;
+                font-size: 15px;
+                display: flex;
+                justify-content: space-between;
+                // max-width: 100px;
+            }
+        }
+
+        .treat-right {
+            img {
+                width: 600px;
+            }
+        }
+    }
+    .children-dentistry {
+        padding: 50px 100px 50px 40px;
+    }
+
+    .everything-need {
+        display: flex;
+        align-items: center;
+
+        .need-right {
+            h6 {
+                font-size: 12.5px;
+            }
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust base font size */
+        display:flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center align items */
+    }
+
+    // .mid-nav a {
+    //     padding: 10px 0; /* Add padding for touch targets */
+    // }
+
+    // .treat {
+    //     flex-direction: column; /* Stack treat section */
+    //     text-align: center; /* Center text */
+    // }
+
+    // .treat-left, .treat-right {
+    //     width: 100%; /* Full width for both sections */
+    // }
+
+    // .social1 {
+    //     display: flex;
+    //     // flex-direction: column; /* Stack social icons */
+    //     align-items: center; /* Center align icons */
+    // }
+
+    // .children-dentistry {
+    //     flex-direction: column; /* Stack children dentistry section */
+    //     text-align: center; /* Center text */
+    // }
+
+    // .everything-need {
+    //     flex-direction: column; /* Stack everything you need section */
+    // }
+
+    // .need-right {
+    //     width: 100%; /* Full width for right section */
+    // }
+
+    // .professional {
+    //     flex-direction: column; /* Stack professional section */
+    //     text-align: center; /* Center text */
+    // }
+
+    // .footer {
+    //     flex-direction: column; /* Stack footer content */
+    //     align-items: center; /* Center align footer items */
+    // }
+
+    // .footer-content {
+    //     width: 100%; /* Full width for footer content */
+    //     text-align: center; /* Center text */
+    // }
+
+    // .social2 {
+    //     flex-direction: column; /* Stack social icons in footer */
+    //     align-items: center; /* Center align icons */
+    // }
+}
+
+/* Styles for phones */
+// @media (max-width: 480px) {
+//     body {
+//         font-size: 12px; /* Further adjust base font size */
+//     }
+
+//     nav {
+//         padding: 10px; /* Add padding for nav */
+//     }
+
+//     .social1 {
+//         display: flex;
+//         // flex-direction: column; /* Stack social icons */
+//         align-items: center; /* Center align icons */
+//     }
+
+//     .treat h1 {
+//         font-size: 1.5em; /* Adjust heading size */
+//     }
+
+//     .more-team button {
+//         width: 100%; /* Full width for buttons */
+//         padding: 10px; /* Add padding */
+//     }
+
+//     .footer-content-info p {
+//         font-size: 12px; /* Adjust footer text size */
+//     }
+
+//     .copyright {
+//         font-size: 10px; /* Smaller copyright text */
+//     }
+// }   

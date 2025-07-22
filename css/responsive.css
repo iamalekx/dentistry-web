@@ -1,0 +1,103 @@
+@media screen and (min-width: (1200px, 768px, 480px)) {
+    #toggle {
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    /* #toggle:hover {
+        cursor: pointer;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+        border: 1px solid blue;
+        padding: 5px;
+        outline: none;
+    } */
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -320px;
+        width: 320px;
+        height: 100vh;
+        background: #fff;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.08);
+        z-index: 1000;
+        transition: left 0.3s;
+        display: flex;
+        flex-direction: column;
+    }
+    #toggle {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        z-index: 1100;
+        font-size: 2.5rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+    body {
+        padding-left: 0 !important;
+    }
+
+    nav {
+        display: none;
+    }
+    #toggle {
+        display: block;
+        font-size: 50px;
+        margin-left: 50px;
+    }
+    .treat .treat-left {
+        max-width: fit-content;
+    }
+    .treat .treat-left h1 {
+        font-size: 50px;
+    }
+    .treat .treat-left .learn-more {
+        margin-top: 20%;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .treat .treat-right img {
+        width: 600px;
+    }
+    .children-dentistry {
+        padding: 50px 100px 50px 40px;
+    }
+    .everything-need {
+        display: flex;
+        align-items: center;
+    }
+    .everything-need .need-right h6 {
+        font-size: 12.5px;
+    }
+    .everything-need .need-right p {
+        font-size: 11px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust base font size */
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center align items */
+    }
+}
+/* Styles for phones */
+
+/*# sourceMappingURL=responsive.css.map */
+
+sidebar {
+    max-width: 300px;
+    height: 75vh;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    border-radius: 10px;
+    /* background-color: darkgoldenrod; */
+}

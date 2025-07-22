@@ -3,8 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/assets/images/logo.png" type="image/x-icon" />
-        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.greyparrot.io/uihub-icons/uihub-icons.min.css"
+        />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -31,9 +36,12 @@
         <title>Dental Pro</title>
     </head>
     <body>
-        <nav>
+        <span type="button" id="toggle" class="u-icon u-icon-32"
+            >o-align-justify</span
+        >
+        <nav id="sidebar">
             <div class="left-nav">
-                <img src="/assets/images/logo.png" alt="logo" />
+                <img src="./assets/images/logo.png" alt="logo" />
                 <p>Denta<span>Pro</span></p>
             </div>
             <div class="mid-nav">
@@ -85,7 +93,7 @@
                 </div>
             </div>
             <div class="treat-right">
-                <img src="/assets/images/smile.jpeg" alt="woman smiling" />
+                <img src="./assets/images/smile.jpeg" alt="woman smiling" />
             </div>
             <div class="social1">
                 <a href="https://www.facebook.com"
@@ -99,11 +107,11 @@
                 ></a>
                 <a href="https://wwww.x.com"><i class="bi bi-twitter-x"></i></a>
                 <img
-                    src="/assets/images/up-arrow.png"
+                    src="./assets/images/up-arrow.png"
                     style="width: 25px; margin-top: 50px"
                 />
                 <img
-                    src="/assets/images/up-arrow.png"
+                    src="./assets/images/up-arrow.png"
                     style="width: 25px; transform: rotate(180deg)"
                 />
             </div>
@@ -111,7 +119,7 @@
         <section class="children-dentistry">
             <div class="dentist">
                 <img
-                    src="/assets/images/dentist.webp"
+                    src="./assets/images/dentist.webp"
                     alt="dentist checking on child"
                 />
             </div>
@@ -138,7 +146,7 @@
             <div class="need-right">
                 <div class="need-right-top">
                     <div class="need-content">
-                        <img src="/assets/images/preventive.png" alt="" />
+                        <img src="./assets/images/preventive.png" alt="" />
                         <h6>Preventive Care</h6>
                         <p>
                             Regular check-ups and fluoride treatments to prevent
@@ -146,7 +154,7 @@
                         </p>
                     </div>
                     <div class="need-content">
-                        <img src="/assets/images/restorative.png" alt="" />
+                        <img src="./assets/images/restorative.png" alt="" />
                         <h6>Restorative Care</h6>
                         <p>
                             Fillings, crowns, bridges, and dentures to restore
@@ -154,7 +162,7 @@
                         </p>
                     </div>
                     <div class="need-content">
-                        <img src="/assets/images/braces.png" alt="" />
+                        <img src="./assets/images/braces.png" alt="" />
                         <h6>Orthodontic Care</h6>
                         <p>
                             Braces and clear aligners to straighten teeth and
@@ -164,7 +172,7 @@
                 </div>
                 <div class="need-right-down">
                     <div class="need-content">
-                        <img src="/assets/images/surgery.png" alt="" />
+                        <img src="./assets/images/surgery.png" alt="" />
                         <h6>Oral Surgery</h6>
                         <p>
                             Extractions, wisdom teeth removal, and other
@@ -172,7 +180,7 @@
                         </p>
                     </div>
                     <div class="need-content">
-                        <img src="/assets/images/star.png" alt="" />
+                        <img src="./assets/images/star.png" alt="" />
                         <h6>Cosmetic Dentistry</h6>
                         <p>
                             Teeth whitening, veneers, and other procedures to
@@ -180,7 +188,7 @@
                         </p>
                     </div>
                     <div class="need-content">
-                        <img src="/assets/images/implant.png" alt="" />
+                        <img src="./assets/images/implant.png" alt="" />
                         <h6>Dental Implants</h6>
                         <p>
                             Dental implants are a popular and effective way to
@@ -193,7 +201,7 @@
         <section class="professional">
             <div class="professional-left">
                 <img
-                    src="/assets/images/male dentist.webp"
+                    src="./assets/images/male dentist.webp"
                     alt="male dentist"
                 />
             </div>
@@ -215,13 +223,13 @@
                 <div class="smile-left">
                     <p>@lisamaria.99</p>
                     <img
-                        src="/assets/images/smile-lady.webp"
+                        src="./assets/images/smile-lady.webp"
                         alt="smiling lady"
                     />
                 </div>
                 <div class="smile-right">
                     <img
-                        src="/assets/images/smile-man.webp"
+                        src="./assets/images/smile-man.webp"
                         alt="smiling gentleman"
                     />
                     <p>@marcopaul</p>
@@ -308,5 +316,15 @@
                 </div>
             </div>
         </section>
+
+        <script>
+            src = "./main.js";
+        </script>
+        <script src="https://cdn.greyparrot.io/uihub-icons/uihub-icons.umd.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                initUIcons();
+            });
+        </script>
     </body>
 </html>
